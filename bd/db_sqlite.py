@@ -2,7 +2,7 @@ import sqlite3 as bd
 
 create_table = """
         CREATE TABLE IF NOT EXISTS users(
-        user_id int primary key ,
+        user_id integer primary key autoincrement,
         surname text not null,
         user_name text not null,
         patronymic text not null,
